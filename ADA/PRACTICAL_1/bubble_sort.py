@@ -1,3 +1,4 @@
+from time import *
 def Bubble_sort(Arr):
     n=len(Arr)
     for i in range(n-1):
@@ -5,6 +6,10 @@ def Bubble_sort(Arr):
             if Arr[j]>Arr[j+1]:
                 Arr[j],Arr[j+1]=Arr[j+1],Arr[j]
             j=j+1
-arr = [3,5,1,8,6,2,4,7,9,10]
+init_time=time()
+arr = [15,14,13,12,11,10,9,8,7,6,5,4,3,2,1]
+print(arr)
+print("Bubble Sort started")
 Bubble_sort(arr)
 print(arr)
+print("Bubble Sort Completed in",(time()-init_time),"sec")

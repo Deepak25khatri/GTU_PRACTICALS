@@ -1,3 +1,4 @@
+from time import *
 def Selection_sort(Arr):
     n=len(Arr)
     for i in range(n):
@@ -7,6 +8,11 @@ def Selection_sort(Arr):
             if min>Arr[j]:
                 min,index=Arr[j],j
         Arr[i],Arr[index]=Arr[index],Arr[i]
-arr = [10,9,8,7,6,5,4,3,2,1]
+
+init_time=time()
+arr = [40,39,38,37,36,35,34,33,32,31,30,29,28,27,26]
+print(arr)
+print("Selection sort started")
 Selection_sort(arr)
 print(arr)
+print("Selection sort Completed in",(time()-init_time),"sec")

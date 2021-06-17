@@ -1,3 +1,4 @@
+from time import *
 def merge_sort(Arr, p, r):
     if r - p > 1:
         q = (p + r)//2
@@ -30,7 +31,10 @@ def merge(Arr, p, q, r):
             j = j + 1
             k = k + 1
  
-num = [10,9,8,7,6,5,4,3,2,1]
-n= len(num)
-merge_sort(num,0,n)
-print(num)
+init_time=time()
+arr = [55,54,53,52,51,50,49,48,47,46,45,44,43,42,41]
+print(arr)
+print("Merge Sort started")
+merge_sort(arr,0,(len(arr)-1))
+print(arr)
+print("Merge Sort Completed in",(time()-init_time),"sec")

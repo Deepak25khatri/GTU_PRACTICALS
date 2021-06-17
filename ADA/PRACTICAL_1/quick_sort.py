@@ -1,3 +1,4 @@
+from time import *
 def partition(Arr,p,r):
     x=Arr[r]
     i=p-1
@@ -14,7 +15,10 @@ def quick_sort(Arr,p,r):
         quick_sort(Arr,p,q-1)
         quick_sort(Arr,q+1,r)
 
-num=[10,9,8,7,6,5,4,3,2,1]
-n=len(num)
-quick_sort(num,0,n-1)
-print(num)
+init_time=time()
+arr = [100,99,98,97,96,95,94,93,92,91,90,89,88,87,86]
+print(arr)
+print("Quick Sort started")
+quick_sort(arr,0,(len(arr)-1))
+print(arr)
+print("Quick Sort Completed in",(time()-init_time),"sec")
