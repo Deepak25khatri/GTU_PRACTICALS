@@ -1,3 +1,5 @@
+# Python program to print all Prime numbers in an Interval.
+
 l=int(input("Enter Lower Bound : "))
 u=int(input("Enter Upper Bound : "))
 print("The prime numbers between ",l," and ",u," are :-")

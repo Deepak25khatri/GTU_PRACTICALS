@@ -1,3 +1,5 @@
+# Python Program for array rotation
+
 def L_rotation(Arr,n,d):
     for i in range(d):
         x=Arr.pop(0)

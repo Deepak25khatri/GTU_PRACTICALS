@@ -1,3 +1,5 @@
+# Python Program for Sum of squares of first n natural numbers
+
 def sum(n):
     return (n*(n+1)*(2*n+1)//6)
 
