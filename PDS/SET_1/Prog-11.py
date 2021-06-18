@@ -6,3 +6,4 @@ L2=L1
 for i in range(x):
     print(max(L2), end=' ')
     L2.remove(max(L2))
+    
