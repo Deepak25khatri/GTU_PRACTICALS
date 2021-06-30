@@ -24,7 +24,6 @@ def heapSort(arr):
 arr = [58,96,14,23,74,52,49,37,82,99,9,1,28,77,29]
 t=time()
 heapSort(arr)
-n = len(arr)
 print(arr)
 print("Max-Heap sort completed in ",time()-t," sec")
 
