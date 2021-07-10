@@ -24,4 +24,4 @@ if result != -1:
     print("\'",x,"\' is present at index",result)
 else:
     print("\'",x," is not present in List")
-print("Linear Search completed in ",time()-time1," sec")
+print("binary Search completed in ",time()-time1," sec")
